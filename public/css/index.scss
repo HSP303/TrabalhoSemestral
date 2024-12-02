@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+$numbers: (
+  zero: #FF3D00,    // Vermelho brilhante
+  um: #FF6D00,     // Laranja escuro
+  dois: #FFAB00,   // Laranja
+  tres: #FFD600,   // Amarelo escuro
+  quatro: #FFFF00, // Amarelo claro
+  cinco: #AEEA00,  // Verde amarelado
+  seis: #76FF03,   // Verde
+  sete: #64DD17,   // Verde claro
+  oito: #00E676,   // Verde limão
+  nove: #00C853,   // Verde esmeralda
+  dez: #009624     // Verde mais escuro (Muito provável)
+);
+
+input[type="radio"] {
+  display: none;
+  &:checked + label {
+    span { transform: scale(1.25); }
+    @each $name, $value in $numbers {
+      .#{$name} {
+        border: 2px solid darken($value, 25%);
+      }
+    }
+  }
+}
+
+label {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  cursor: pointer;
+  &:hover {
+    span { 
+      transform: scale(1.25); 
+    }
+  }
+  span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform .2s ease-in-out;
+    @each $name, $value in $numbers {
+      &.#{$name} {
+        background: $value;
+      }
+    }
+  }
+}

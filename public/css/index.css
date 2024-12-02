@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'lato';
+  border: none;
+}
+ 
+body {
+  background-color: lightgray;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  height: 85%;
+}
+
+footer{
+  display: flex;
+  background-color: rgb(42, 42, 87);
+  height: 15%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.area{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  max-height: 450px;
+  border-radius: 20px;
+  padding: 60px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+fieldset div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  font-size: 1.9rem;
+}
+
+
+
+legend{
+  font-size: 2.2rem;
+}
+
+.buttons{
+  display: flex;
+  margin: 1px;
+  font-size: 16px;
+  color: white;
+  justify-content: space-between;
+}
+
+.button_proximo{
+  font-size: 16px;
+  color: white;
+  justify-content: end;
+}
+
+#esq:hover{
+  transform: scale(1.1);
+}
+
+#dir:hover{
+  transform: scale(1.1);
+}
+
+#esq{
+  padding: 25px;
+  background-color: #f44336;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+  width: 120px;
+}
+
+#dir{
+  padding: 25px;
+  background-color: #4CAF50;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+  width: 120px;
+}
+
+#texto_opcional{
+  width: 100%;
+  height: 150px;
+  cursor: text;
+  outline: 0;
+  font-size: 1.5rem;
+}
+
+
+
+input[type=radio] {
+  display: none;
+}
+input[type=radio]:checked + label span {
+  transform: scale(1.25);
+}
+input[type=radio]:checked + label .zero {
+  border: 2px solid #801f00;
+}
+input[type=radio]:checked + label .um {
+  border: 2px solid #803700;
+}
+input[type=radio]:checked + label .dois {
+  border: 2px solid #805600;
+}
+input[type=radio]:checked + label .tres {
+  border: 2px solid #806b00;
+}
+input[type=radio]:checked + label .quatro {
+  border: 2px solid olive;
+}
+input[type=radio]:checked + label .cinco {
+  border: 2px solid #4f6b00;
+}
+input[type=radio]:checked + label .seis {
+  border: 2px solid #3c8300;
+}
+input[type=radio]:checked + label .sete {
+  border: 2px solid #306a0b;
+}
+input[type=radio]:checked + label .oito {
+  border: 2px solid #006735;
+}
+input[type=radio]:checked + label .nove {
+  border: 2px solid #00491e;
+}
+input[type=radio]:checked + label .dez {
+  border: 2px solid #001705;
+}
+
+label {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-justify: center;
+}
+label:hover span {
+  transform: scale(1.25);
+}
+label span {
+  display: block;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+label span.zero {
+  background: #FF3D00;
+}
+label span.um {
+  background: #FF6D00;
+}
+label span.dois {
+  background: #FFAB00;
+}
+label span.tres {
+  background: #FFD600;
+}
+label span.quatro {
+  background: #FFFF00;
+}
+label span.cinco {
+  background: #AEEA00;
+}
+label span.seis {
+  background: #76FF03;
+}
+label span.sete {
+  background: #64DD17;
+}
+label span.oito {
+  background: #00E676;
+}
+label span.nove {
+  background: #00C853;
+}
+label span.dez {
+  background: #009624;
+}/*# sourceMappingURL=index.css.map */
+
+.pergunta{
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: justify;
+}
+
